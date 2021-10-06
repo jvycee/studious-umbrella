@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Validator Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <form id="form">
+            <div class="title">Get started</div>
+            <!-- User Name input-->
+
+
+
+            <div>
+                <label for="username">User name</label>
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Jaycee Lewis" />
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="fas fa-check-circle success-icon"></i>
+                <div class="error"></div>
+                <!-- Email input-->
+                <div>
+                    <label for="email">Email</label>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="cat@cat.com" />
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="fas fa-check-circle success-icon"></i>
+                    <div class="error"></div>
+                    <!-- Password input -->
+                    <div>
+                        <label for="password">Password</label>
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" id="password" placeholder="use a good one" />
+                        <i class="fas fa-exclamation-circle failure-icon"></i>
+                        <i class="fas fa-check-circle success-icon"></i>
+                        <div class="error"></div>
+                    </div>
+                    <!-- other codes here -->
+                    <button id="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
